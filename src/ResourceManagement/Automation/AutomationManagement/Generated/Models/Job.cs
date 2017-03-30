@@ -41,6 +41,17 @@ namespace Microsoft.Azure.Management.Automation.Models
             set { this._id = value; }
         }
         
+        private string _name;
+        
+        /// <summary>
+        /// Optional. Gets or sets the name of the resource.
+        /// </summary>
+        public string Name
+        {
+            get { return this._name; }
+            set { this._name = value; }
+        }
+        
         private JobProperties _properties;
         
         /// <summary>

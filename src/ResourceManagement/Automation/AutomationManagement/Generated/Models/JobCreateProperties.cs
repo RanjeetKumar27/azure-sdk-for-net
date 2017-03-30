@@ -32,6 +32,17 @@ namespace Microsoft.Azure.Management.Automation.Models
     /// </summary>
     public partial class JobCreateProperties
     {
+        private string _name;
+        
+        /// <summary>
+        /// Optional. Gets or sets the name.
+        /// </summary>
+        public string Name
+        {
+            get { return this._name; }
+            set { this._name = value; }
+        }
+        
         private IDictionary<string, string> _parameters;
         
         /// <summary>

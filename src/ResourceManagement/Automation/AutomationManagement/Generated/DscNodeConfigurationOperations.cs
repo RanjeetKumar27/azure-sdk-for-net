@@ -158,7 +158,7 @@ namespace Microsoft.Azure.Management.Automation
             url = url + "/nodeConfigurations/";
             url = url + Uri.EscapeDataString(parameters.Name);
             List<string> queryParameters = new List<string>();
-            queryParameters.Add("api-version=2015-10-31");
+            queryParameters.Add("api-version=2017-05-15-preview");
             if (queryParameters.Count > 0)
             {
                 url = url + "?" + string.Join("&", queryParameters);
@@ -427,7 +427,7 @@ namespace Microsoft.Azure.Management.Automation
             url = url + "/nodeConfigurations/";
             url = url + Uri.EscapeDataString(nodeConfigurationName);
             List<string> queryParameters = new List<string>();
-            queryParameters.Add("api-version=2015-10-31");
+            queryParameters.Add("api-version=2017-05-15-preview");
             if (queryParameters.Count > 0)
             {
                 url = url + "?" + string.Join("&", queryParameters);
@@ -587,7 +587,7 @@ namespace Microsoft.Azure.Management.Automation
             url = url + "/nodeConfigurations/";
             url = url + Uri.EscapeDataString(nodeConfigurationName);
             List<string> queryParameters = new List<string>();
-            queryParameters.Add("api-version=2015-10-31");
+            queryParameters.Add("api-version=2017-05-15-preview");
             if (queryParameters.Count > 0)
             {
                 url = url + "?" + string.Join("&", queryParameters);
@@ -811,7 +811,7 @@ namespace Microsoft.Azure.Management.Automation
             {
                 queryParameters.Add("$filter=" + string.Join(null, odataFilter));
             }
-            queryParameters.Add("api-version=2015-10-31");
+            queryParameters.Add("api-version=2017-05-15-preview");
             if (queryParameters.Count > 0)
             {
                 url = url + "?" + string.Join("&", queryParameters);

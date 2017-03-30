@@ -142,7 +142,7 @@ namespace Microsoft.Azure.Management.Automation
             url = url + Uri.EscapeDataString(typeName);
             url = url + "/fields";
             List<string> queryParameters = new List<string>();
-            queryParameters.Add("api-version=2015-10-31");
+            queryParameters.Add("api-version=2017-05-15-preview");
             if (queryParameters.Count > 0)
             {
                 url = url + "?" + string.Join("&", queryParameters);
@@ -344,7 +344,7 @@ namespace Microsoft.Azure.Management.Automation
             url = url + Uri.EscapeDataString(typeName);
             url = url + "/fields";
             List<string> queryParameters = new List<string>();
-            queryParameters.Add("api-version=2015-10-31");
+            queryParameters.Add("api-version=2017-05-15-preview");
             if (queryParameters.Count > 0)
             {
                 url = url + "?" + string.Join("&", queryParameters);
